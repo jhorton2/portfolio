@@ -8,7 +8,7 @@
      margin-left: 20px;
    }
    li a {
-     display: block;
+     display: inline-block;
      width: 100px;
      height: 50px;
      background-color: white;
@@ -35,12 +35,6 @@
      overflow: hidden;
      background-color: green;
    }
-   a {
-   display: inline;
-   padding: 8px;
-   background-color: #dddddd;
-   float: left;
-  }
   body {
     background-color: green;
     text-decoration-color: white;
@@ -56,3 +50,8 @@
   .image-border{
     border: 1px solid white;
   }
+  .img-resize {
+    width:400px;
+    height:400px;
+  }
+  
