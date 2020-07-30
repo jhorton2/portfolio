@@ -2,16 +2,20 @@
      text-align: center;
      color: white;
      text-decoration-style: dotted;
+     margin-bottom: 10px;
+     font-family: 'Alfa Slab One', cursive;
+     font-weight: lighter;
+     padding: 80px;
+     font-size: 50px;
    }
    p {
      text-indent: 20px;
      margin-left: 20px;
    }
    li a {
-     display: inline-block;
      width: 100px;
-     height: 50px;
-     background-color: white;
+     height: 100px;
+     background-color: yellow;
      color: green;
      padding: 10px 16px;
      text-decoration: none;
@@ -22,16 +26,22 @@
    li a:hover {
      background-color: white;
      color: grey;
-     float: left;
    }
    .active {
      background-color: green;
      color: white;
    }
    .navbar {
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
      list-style-type: none;
-     margin: 0;
-     padding: 0;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     margin-left: 0;
+     padding-left: 0;
      overflow: hidden;
      background-color: green;
    }
@@ -44,14 +54,30 @@
   header {
     border-style: solid;
   }
+  .background-image {
+    background-image: url("https://golfadvisor.brightspotcdn.com/dims4/default/03ae15a/2147483647/strip/true/crop/1400x735+0+0/resize/2743x1440!/quality/85/?url=https%3A%2F%2Fphotos-us.bazaarvoice.com%2Fphoto%2F2%2FcGhvdG86Z29sZm5vdw%2F363c65f4-67f4-59c6-854f-0bcc367ff600");
+    background-position: center;
+    height: 300px;
+    background-repeat: no-repeat;
+  }
   .margin {
     margin-left: 20px;
   }
   .image-border{
     border: 1px solid white;
+    float: left;
+    margin: 0px;
+    padding: 0px;
   }
   .img-resize {
     width:400px;
     height:400px;
   }
-  
+  .flexbox-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .caption-size {
+    width: 250px;
+  }
