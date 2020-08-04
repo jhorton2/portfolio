@@ -1,20 +1,19 @@
    h1 {
      text-align: center;
      color: white;
-     text-decoration-style: dotted;
      margin-bottom: 10px;
      font-family: 'Alfa Slab One', cursive;
      font-weight: lighter;
      padding: 80px;
      font-size: 50px;
-   }
+  }
    p {
      text-indent: 20px;
      margin-left: 20px;
    }
    li a {
-     width: 100px;
-     height: 100px;
+     width: 100em;
+     height: 100em;
      background-color: yellow;
      color: green;
      padding: 10px 16px;
@@ -26,6 +25,8 @@
    li a:hover {
      background-color: white;
      color: grey;
+     transition-timing-function: ease;
+     transition-duration: 2s;
    }
    .active {
      background-color: green;
@@ -34,6 +35,7 @@
    .navbar {
      display: flex;
      flex-direction: row;
+     flex-wrap: wrap;
      justify-content: flex-start;
      list-style-type: none;
      margin-top: 10px;
@@ -68,6 +70,8 @@
     float: left;
     margin: 0px;
     padding: 0px;
+    transition-timing-function: ease;
+    transition-delay: 1s;
   }
   .img-resize {
     width:400px;
@@ -75,9 +79,35 @@
   }
   .flexbox-container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
   }
   .caption-size {
     width: 250px;
   }
+  p:first-child:first-letter {
+    color: yellow;
+    /* float: left; */
+    font-family: Georgia;
+    font-size: 33px;
+    line-height: 30px;
+    padding-top: 4px;
+    padding-right: 1px;
+    padding-left: 1px;
+    padding-bottom: 50px;
+  }
+  ol li:nth-child(even) {
+    color: yellow;
+  }
+  ol li:nth-child(odd) {
+    color: lightgrey;
+  }
+  /* .basic-facts ul li:nth-child(odd) {
+    color: blue;
+  } */
+  /* .footer-link {
+    transition-timing-function: ease;
+    transition-duration: 2s;
+    transition:
+  } */
