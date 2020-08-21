@@ -26,7 +26,7 @@
      background-color: white;
      color: grey;
      transition-timing-function: ease;
-     transition-duration: 2s;
+     transition-duration: 1s;
    }
    .active {
      background-color: green;
@@ -103,11 +103,32 @@
   ol li:nth-child(odd) {
     color: lightgrey;
   }
-  /* .basic-facts ul li:nth-child(odd) {
-    color: blue;
-  } */
-  /* .footer-link {
-    transition-timing-function: ease;
-    transition-duration: 2s;
-    transition:
-  } */
+  fieldset, form, select, button, input {
+    margin-top: 20px;
+    font-family: sans-serif, helvetica;
+    font-size: 20px;
+    box-sizing: border-box;
+    margin: 1rem;
+  }
+  form {
+    color: #FFFFFF;
+  }
+  input {
+    border-radius: 15px;
+  }
+  input[type=email]:focus {
+    background-color: yellow;
+    outline: inherit;
+  }
+  input[type=submit]:hover {
+    background-color: yellow;
+    }
+  fieldset {
+    border-color: yellow;
+  }
+  input[type=radio] {
+    cursor: pointer;
+  }
+  input[type=checkbox] {
+    cursor: pointer;
+  }

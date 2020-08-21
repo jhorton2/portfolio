@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+  </head>
+  <body>
+    <h1>Contact Me!</h1>
+    <nav>
+      <ul class="navbar">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about-me.html">About Me</a></li>
+        <li><a href="courses-ive-played.html">Courses I've Played</a></li>
+        <li><a href="the-bucket-list.html">The Bucket List</a></li>
+        <li><a href="other-courses-i-havent-played.html">Other Courses I Haven't Played</a></li>
+      </ul>
+    </nav>
+
+    <form action="/action.php" method="GET">
+      <label>Your name:
+        <input type="text" name="name">
+      <label> <br>
+      <label>Email:
+        <input type="email" name="email"> <br>
+      </label>
+      <label>How many courses have you played in Washington?
+        <input type="number" name="courseCount">
+      </label>
+      <fieldset>
+        <legend>Which course should I play next?</legend>
+        <label>Chambers Bay
+          <input type="radio" name="type" value="chambers-bay">
+        </label>
+        <label>Gamble Sands
+          <input type="radio" name="type" value="gamble-sands">
+        </label>
+        <label>Palouse Ridge
+          <input type="radio" name="type" value="palouse-ridge">
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>How many of my favorite courses have you played?</legend>
+        <label>The Home Course
+          <input type="checkbox" name="type" value="home-course">
+        </label>
+        <label>Gold Mountain
+          <input type="checkbox" name="type" value="gold-mountain">
+        </label>
+        <label>White Horse
+          <input type="checkbox" name="type" value="white-horse">
+        </label>
+        <label>The Plateau Club
+          <input type="checkbox" name="type" value="plateau-club">
+        </label>
+        <label>Discovery Bay
+          <input type="checkbox" name="type" value="discovery-bay">
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit">
+    </form>
+
+
+
+  </body>
+</html>
